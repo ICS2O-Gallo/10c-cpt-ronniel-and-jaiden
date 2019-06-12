@@ -1,6 +1,3 @@
-# 10c-cpt-ronniel-and-jaiden
-10c-cpt-ronniel-and-jaiden created by GitHub Classroom
-
 import arcade
 
 
