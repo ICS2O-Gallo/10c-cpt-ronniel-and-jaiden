@@ -10,21 +10,58 @@ zom_x = 0
 zom_y = 1
 zom_width = 2
 zom_height = 3
-zom_color = 4
+zom_color_body = 4
 
-zombie_1 = [100, 100, 30, 50, arcade.color.GREEN]
+i = random.randrange(30, HEIGHT-30)
+
+
+
+zombie_1_body = [, i, 30, 50, arcade.color.GREEN]
+zombie_1_head = [zombie_1_body[0], zombie_1_body[1] + 36, 20, 20, arcade.color.GREEN]
+
+zombie_2_body = [rand, i, 30, 50, arcade.color.GREEN]
+zombie_2_head = [zombie_2_body[0], zombie_2_body[1] + 36, 20, 20, arcade.color.GREEN]
+
+zombie_3_body = [rand, i, 30, 50, arcade.color.GREEN]
+zombie_3_head = [zombie_3_body[0], zombie_3_body[1] + 36, 20, 20, arcade.color.GREEN]
+
+zombie_4_body = [rand, i, 30, 50, arcade.color.GREEN]
+zombie_4_head = [zombie_4_body[0], zombie_4_body[1] + 36, 20, 20, arcade.color.GREEN]
+
+zombie_5_body = [rand, i, 30, 50, arcade.color.GREEN]
+zombie_5_head = [zombie_5_body[0], zombie_5_body[1] + 36, 20, 20, arcade.color.GREEN]
+
+zombie_6_body = [rand, i, 30, 50, arcade.color.GREEN]
+zombie_6_head = [zombie_6_body[0], zombie_6_body[1] + 36, 20, 20, arcade.color.GREEN]
+
+
 
 def update(delta_time):
-    pass
-
-
+   pass
 
 
 
 
 def on_draw():
     arcade.start_render()
-    draw_zombie(zombie_1)
+
+    draw_zombie(zombie_1_body)
+    draw_zombie(zombie_1_head)
+
+    draw_zombie(zombie_2_body)
+    draw_zombie(zombie_2_head)
+
+    draw_zombie(zombie_3_body)
+    draw_zombie(zombie_3_head)
+
+    draw_zombie(zombie_4_body)
+    draw_zombie(zombie_4_head)
+
+    draw_zombie(zombie_5_body)
+    draw_zombie(zombie_5_head)
+
+    draw_zombie(zombie_6_body)
+    draw_zombie(zombie_6_head)
 
 
 
@@ -42,11 +79,26 @@ def on_mouse_press(x, y, button, modifiers):
     pass
 
 def draw_zombie(zombie):
+
+
+
+
+
+    # body
     arcade.draw_rectangle_filled(zombie[zom_x],
                                  zombie[zom_y],
                                  zombie[zom_width],
                                  zombie[zom_height],
-                                 zombie[zom_color])
+                                 zombie[zom_color_body])
+    # head
+    arcade.draw_rectangle_filled(zombie[zom_x],
+                                 zombie[zom_y],
+                                 zombie[zom_width],
+                                 zombie[zom_height],
+                                 zombie[zom_color_body])
+
+
+
 
 
 def setup():
