@@ -17,7 +17,7 @@ BTN_COLOR = 5
 BTN_CLICKED_COLOR = 6
 
 
-button1 = [WIDTH / 4 + 135, HEIGHT / 2 + 50, 275, 50, False, arcade.color.BLACK, arcade.color.BLACK]
+button1 = [WIDTH / 4 + 135, HEIGHT / 2 + 50, 360, 50, False, arcade.color.BLACK, arcade.color.BLACK]
 button2 = [WIDTH / 4 + 135, HEIGHT / 3 + 45, 360, 55, False, arcade.color.BLACK, arcade.color.BLACK]
 button3 = [WIDTH / 4 + 135, HEIGHT / 3 - 53, 360, 55, False, arcade.color.BLACK, arcade.color.BLACK]
 button4 = [85, 75, 355, 50, False, arcade.color.BLACK, arcade.color.BLACK]
@@ -222,7 +222,7 @@ def on_draw():
 
         # bullets and zombie respawn location
         for bullet in bullet_list:
-            arcade.draw_circle_filled(bullet[0] - 15, bullet[1] + 40, 3, arcade.color.BLUE_GRAY)
+            arcade.draw_circle_filled(bullet[0] - 15, bullet[1] + 40, 3, arcade.color.RED)
             if zom_x_1 >= bullet[0] and zom_y_1 - 40 <= bullet[1] and zom_y_1 + 50 >= bullet[1]:
                 del bullet_list[0]
 
