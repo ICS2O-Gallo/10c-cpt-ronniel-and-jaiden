@@ -265,7 +265,7 @@ def on_draw():
         draw_button(button5)
 
         # Why player lost
-        arcade.draw_text("The Zombies have Broke the Barricade", 125, HEIGHT - 100, arcade.color.RED_DEVIL, 50)
+        arcade.draw_text("The Zombies have Broke the Barricade", 75, HEIGHT - 100, arcade.color.RED_DEVIL, 40)
 
         # option
         arcade.draw_text("Main Menu", WIDTH / 4 + 135, HEIGHT / 3 - 50, arcade.color.RED_DEVIL, 50)
@@ -399,3 +399,6 @@ def draw_button(button):
 
 if __name__ == '__main__':
     setup()
+
+
+
