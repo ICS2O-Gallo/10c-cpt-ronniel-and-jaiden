@@ -181,7 +181,7 @@ def on_draw():
         arcade.draw_text("M-VIRUS", WIDTH / 4 + 100, HEIGHT - 200, arcade.color.LIGHT_GREEN, 75)
         # options
         arcade.draw_text("Play Game", WIDTH / 4 + 135, HEIGHT / 2 + 50, arcade.color.RED_DEVIL, 50)
-        arcade.draw_text("Intructions", WIDTH / 4 + 135, HEIGHT / 3 + 50, arcade.color.RED_DEVIL, 50)
+        arcade.draw_text("Instructions", WIDTH / 4 + 135, HEIGHT / 3 + 50, arcade.color.RED_DEVIL, 50)
         arcade.draw_text("Quit Game", WIDTH / 4 + 135, HEIGHT / 3 - 50, arcade.color.RED_DEVIL, 50)
 
     elif current_screen == "instructions":
